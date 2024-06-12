@@ -38,8 +38,12 @@ export PATH=$PATH:/opt/core/venv/bin
 alias sudop='sudo env PATH=$PATH'
 ```
 
+For good measure, make sure to restart the machine after you have completed the installation process. There appear to be some weird bugs if you don't.
+
 ### Alternative
 Before proceeding with the rest of this installation guide, please follow the instructions on [this website](https://coreemu.github.io/core/install.html) to install CORE.
+
+### Post-install
 
 Once you have completed the installation and verified CORE is working, you can continue with the following steps:
 1. Clone the github repo
