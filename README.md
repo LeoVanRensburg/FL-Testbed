@@ -16,16 +16,15 @@ With the increasing adoption of Artificial Intelligence (AI) and Machine Learnin
 
 ## Installation
 
-### Prerequisites
+Before proceeding with the rest of this installation guide, please follow the instructions on [this website](https://coreemu.github.io/core/install.html) to install CORE.
 
-* Python 3.7+
-* pip
+Once you have completed the installation and verified CORE is working, you can continue with the following steps:
+1. Clone the github repo
+2. Move the files to X
 
-### Steps
+## Usage
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/your_username/repo_name.git
+Run the scripts to navigate through the provided scenarios.
 
 ## Contact
 Email: research@leeu.me
