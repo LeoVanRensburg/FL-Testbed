@@ -16,6 +16,29 @@ With the increasing adoption of Artificial Intelligence (AI) and Machine Learnin
 
 ## Installation
 
+### Recommended Way To Install CORE
+
+Install Ubuntu 22.04 Desktop on either a VPS, Dedicated Server (recommended if GPU required) or VM (recommended if no GPU required).
+```
+# clone CORE repo
+git clone https://github.com/coreemu/core.git
+cd core
+
+# install dependencies to run installation task
+./setup.sh
+
+# run the following or open a new terminal
+source ~/.bashrc
+inv install
+
+# add to ~/.bashrc
+export PATH=$PATH:/opt/core/venv/bin
+
+# add an alias to ~/.bashrc or something similar
+alias sudop='sudo env PATH=$PATH'
+```
+
+### Alternative
 Before proceeding with the rest of this installation guide, please follow the instructions on [this website](https://coreemu.github.io/core/install.html) to install CORE.
 
 Once you have completed the installation and verified CORE is working, you can continue with the following steps:
@@ -23,6 +46,14 @@ Once you have completed the installation and verified CORE is working, you can c
 2. Move the files to X
 
 ## Usage
+```
+# now you can run commands like so
+sudop core-daemon
+```
+and
+```
+core-gui
+```
 
 Run the scripts to navigate through the provided scenarios.
 
