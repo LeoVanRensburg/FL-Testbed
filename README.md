@@ -12,9 +12,7 @@ With the increasing adoption of Artificial Intelligence (AI) and Machine Learnin
 
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [Contributing](#contributing)
-4. [License](#license)
-5. [Contact](#contact)
+3. [Contact](#contact)
 
 ## Installation
 
@@ -28,3 +26,6 @@ With the increasing adoption of Artificial Intelligence (AI) and Machine Learnin
 1. Clone the repo
    ```sh
    git clone https://github.com/your_username/repo_name.git
+
+## Contact
+Email: research@leeu.me
