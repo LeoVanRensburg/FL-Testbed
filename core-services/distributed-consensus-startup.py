@@ -23,8 +23,8 @@ class DistributedConsensus(ConfigService):
     dependencies: List[str] = []
     # commands to run to start this service
     startup: List[str] = [
-        "pip3 install phe --no-index --find-links /home/$(whoami)/Documents/DistributedConsensusAlgorithm/setup/phe-1.5.0-py2.py3-none-any.whl",
-        "pip3 install paramiko --no-index --find-links /home/$(whoami)/Documents/DistributedConsensusAlgorithm/setup/paramiko-3.4.0-py3-none-any.whl",
+        "pip3 install phe --no-index --find-links /home/whoami/Documents/DistributedConsensusAlgorithm/setup/phe-1.5.0-py2.py3-none-any.whl",
+        "pip3 install paramiko --no-index --find-links /home/whoami/Documents/DistributedConsensusAlgorithm/setup/paramiko-3.4.0-py3-none-any.whl",
     ]
     # commands to run to validate this service
     validate: List[str] = []
@@ -41,7 +41,6 @@ class DistributedConsensus(ConfigService):
     }
     # defines directories that this service can help shadow within a node
     shadow_directories: List[ShadowDir] = [
-        ShadowDir(path="/home/$(whoami)/Documents/DistributedConsensusAlgorithm"),
     ]
 
     def get_text_template(self, name: str) -> str:
