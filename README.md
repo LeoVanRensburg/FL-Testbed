@@ -94,7 +94,7 @@ After having run the following commands, go to the folder in which you cloned th
 
 For example, if you wanted to run Full-mesh.py, you would need to use the following command:
 ```
-/opt/core/venv/bin/python Full-mesh.py
+/opt/core/venv/bin/python Full-Mesh.py
 ```
 
 ## Contact
