@@ -57,6 +57,11 @@ Now, go to your Documents folder, or your preferred place and clone this git rep
 ```
 git clone https://github.com/LeoVanRensburg/FL-Testbed /home/$(whoami)/Documents/DistributedConsensusAlgorithm
 ```
+Next, we need to rename all the files to have your username for the testbed to function properly. 
+```
+find /home/$(whoami)/Documents/DistributedConsensusAlgorithm -type f -exec sed -i "s/whoami/$(whoami)/g" {} +
+```
+
 Next, we need to move the custom service into the core-daemon so it loads upon startup. This is typically found in /home/$(whoami)/core/daemon/core/configservices/utilservices.
 ```
 cp -r /home/$(whoami)/Documents/DistributedConsensusAlgorithm/core-services/* /home/$(whoami)/core/daemon/core/configservices/utilservices
