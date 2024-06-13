@@ -71,6 +71,11 @@ Next, we need to make a directory in which the logs can be made.
 mkdir -p /home/$(whoami)/Documents/logs/{1..13}
 ```
 
+We also need to give the script start.sh permissions to execute.
+```
+chmod +x /home/leo/Documents/DistributedConsensusAlgorithm/start.sh
+```
+
 Now you can proceed to [Usage](#usage).
 
 ## Usage
@@ -83,6 +88,10 @@ core-gui
 ```
 
 Run the scripts to navigate through the provided scenarios.
+Use the following python file
+```
+/opt/core/venv/bin/python Full_mesh.py
+```
 
 ## Contact
 Email: research@leeu.me
