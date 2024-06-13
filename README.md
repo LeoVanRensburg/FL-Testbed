@@ -40,6 +40,25 @@ alias sudop='sudo env PATH=$PATH'
 
 For good measure, make sure to restart the machine after you have completed the installation process. There appear to be some weird bugs if you don't.
 
+Now you should be able to run core-daemon by running the command:
+```
+sudop core-daemon
+```
+
+Now, go to your Documents folder, or your preferred place and clone this git repo. 
+```
+git clone LeoVanRensburg/FL-Testbed
+```
+Next, we need to move the custom service into the core-daemon so it loads upon startup. This is typically found in /home/$(whoami)/core/daemon/core/configservices/utilservices.
+```
+cp -r FL-Testbed/core-services /home/$(whoami)/core/daemon/core/configservices/utilservices
+```
+
+Next, navigate to your install location, typically found in /home/$(whoami)/core/daemon/core/configservices/utilservices
+While in this folder, make copy the files found in this github repo (insert link here) to this folder.
+
+Now you can proceed to [Usage](#usage).
+
 ### Alternative
 Before proceeding with the rest of this installation guide, please follow the instructions on [this website](https://coreemu.github.io/core/install.html) to install CORE.
 
