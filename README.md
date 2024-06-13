@@ -96,6 +96,14 @@ For example, if you wanted to run Full-mesh.py, you would need to use the follow
 ```
 /opt/core/venv/bin/python Full-Mesh.py
 ```
+## Useful Commands
+
+Some other useful commands are present which can be used to improve the user experience.
+
+The below command allows you to cleanup any remnants of CORE in case of a crash or exit of CORE, so you don't have to manually clean it up.
+```
+sudop core-cleanup
+```
 
 ## Contact
 Email: research@leeu.me
