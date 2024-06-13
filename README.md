@@ -59,7 +59,7 @@ If you can successfully run this command, you can proceed below. If not, it is r
 
 Now, go to your Documents folder, or your preferred place and clone this git repo. 
 ```
-git clone https://github.com/LeoVanRensburg/FL-Testbed
+git clone https://github.com/LeoVanRensburg/FL-Testbed /home/$(whoami)/Documents/DistributedConsensusAlgorithm
 ```
 Next, we need to move the custom service into the core-daemon so it loads upon startup. This is typically found in /home/$(whoami)/core/daemon/core/configservices/utilservices.
 ```
@@ -73,7 +73,7 @@ mkdir -p /home/$(whoami)/Documents/logs/{1..13}
 
 We also need to give the script start.sh permissions to execute.
 ```
-chmod +x /home/leo/Documents/DistributedConsensusAlgorithm/start.sh
+chmod +x /home/leo/$(whoami)/DistributedConsensusAlgorithm/start.sh
 ```
 
 Now you can proceed to [Usage](#usage).
