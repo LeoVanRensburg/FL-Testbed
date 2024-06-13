@@ -26,7 +26,7 @@ star_topology() {
     get_filename
     pythonScriptPath="/home/$whoami/Documents/DistributedConsensusAlgorithm/Algorithms/star/main$node.py"
     logPath="/home/$whoami/Documents/logs/$node/log.txt"
-    python3-u "$pythonScriptPath" > "$logPath" 2>&1
+    python3 -u "$pythonScriptPath" > "$logPath" 2>&1
 }
 
 # Function for executing the script for Tree Network Topology
