@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<scenario name="/tmp/tmpzmidhbd0">
+  <networks>
+    <network id="7" name="n7" icon="" canvas="1" type="SWITCH">
+      <position x="405.2189025878906" y="297.8265686035156" lat="47.576459200220626" lon="-122.12686400374585" alt="2.0"/>
+    </network>
+  </networks>
+  <devices>
+    <device id="1" name="1" icon="" canvas="1" type="PC" class="" image="">
+      <position x="405.56219482421875" y="167.58493041992188" lat="47.577643100212825" lon="-122.1268593779759" alt="2.0"/>
+      <configservices>
+        <service name="Distributed Consensus Algorithm"/>
+        <service name="Node Startup Script"/>
+        <service name="DefaultRoute"/>
+      </configservices>
+    </device>
+    <device id="2" name="2" icon="" canvas="1" type="PC" class="" image="">
+      <position x="490.94384765625" y="209.94740295410156" lat="47.57725802713613" lon="-122.12570888332007" alt="2.0"/>
+      <configservices>
+        <service name="Distributed Consensus Algorithm"/>
+        <service name="Node Startup Script"/>
+        <service name="DefaultRoute"/>
+      </configservices>
+    </device>
+    <device id="3" name="3" icon="" canvas="1" type="PC" class="" image="">
+      <position x="533.992919921875" y="298.0191955566406" lat="47.576457449216626" lon="-122.12512880872632" alt="2.0"/>
+      <configservices>
+        <service name="Distributed Consensus Algorithm"/>
+        <service name="Node Startup Script"/>
+        <service name="DefaultRoute"/>
+      </configservices>
+    </device>
+    <device id="4" name="4" icon="" canvas="1" type="PC" class="" image="">
+      <position x="490.94384765625" y="383.4833068847656" lat="47.57568056357525" lon="-122.12570888332007" alt="2.0"/>
+      <configservices>
+        <service name="Distributed Consensus Algorithm"/>
+        <service name="Node Startup Script"/>
+        <service name="DefaultRoute"/>
+      </configservices>
+    </device>
+    <device id="5" name="5" icon="" canvas="1" type="PC" class="" image="">
+      <position x="405.4868469238281" y="424.8914794921875" lat="47.5753041509676" lon="-122.12686039326847" alt="2.0"/>
+      <configservices>
+        <service name="Distributed Consensus Algorithm"/>
+        <service name="Node Startup Script"/>
+        <service name="DefaultRoute"/>
+      </configservices>
+    </device>
+    <device id="6" name="6" icon="" canvas="1" type="PC" class="" image="">
+      <position x="316.90545654296875" y="384.2871398925781" lat="47.57567325651983" lon="-122.12805400352148" alt="2.0"/>
+      <configservices>
+        <service name="Distributed Consensus Algorithm"/>
+        <service name="DefaultRoute"/>
+      </configservices>
+    </device>
+    <device id="8" name="7" icon="" canvas="1" type="PC" class="" image="">
+      <position x="277.10162353515625" y="298.9246520996094" lat="47.57644921849834" lon="-122.12859034939483" alt="2.0"/>
+      <configservices>
+        <service name="Distributed Consensus Algorithm"/>
+        <service name="DefaultRoute"/>
+        <service name="Automatic SSH Setup"/>
+      </configservices>
+    </device>
+    <device id="9" name="8" icon="" canvas="1" type="PC" class="" image="">
+      <position x="318.61834716796875" y="208.7057647705078" lat="47.57726931361479" lon="-122.12803092278406" alt="2.0"/>
+      <configservices>
+        <service name="Distributed Consensus Algorithm"/>
+        <service name="DefaultRoute"/>
+        <service name="Automatic SSH Setup"/>
+      </configservices>
+    </device>
+  </devices>
+  <links>
+    <link node1="1" node2="7">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:00" ip4="10.0.0.20" ip4_mask="24" ip6="2001::14" ip6_mask="64"/>
+      <iface2 id="0" name="veth7.0.4"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0" buffer="0"/>
+    </link>
+    <link node1="7" node2="2">
+      <iface1 id="1" name="veth7.1.4"/>
+      <iface2 id="0" name="eth0" mac="00:00:00:aa:00:01" ip4="10.0.0.21" ip4_mask="24" ip6="2001::15" ip6_mask="64"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0" buffer="0"/>
+    </link>
+    <link node1="3" node2="7">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:02" ip4="10.0.0.22" ip4_mask="24" ip6="2001::16" ip6_mask="64"/>
+      <iface2 id="2" name="veth7.2.4"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0" buffer="0"/>
+    </link>
+    <link node1="5" node2="7">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:04" ip4="10.0.0.24" ip4_mask="24" ip6="2001::18" ip6_mask="64"/>
+      <iface2 id="4" name="veth7.4.4"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0" buffer="0"/>
+    </link>
+    <link node1="4" node2="7">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:03" ip4="10.0.0.23" ip4_mask="24" ip6="2001::17" ip6_mask="64"/>
+      <iface2 id="3" name="veth7.3.4"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0" buffer="0"/>
+    </link>
+    <link node1="8" node2="7">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:06" ip4="10.0.0.26" ip4_mask="24" ip6="2001::1a" ip6_mask="64"/>
+      <iface2 id="6" name="veth7.6.4"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0" buffer="0"/>
+    </link>
+    <link node1="9" node2="7">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:07" ip4="10.0.0.27" ip4_mask="24" ip6="2001::1b" ip6_mask="64"/>
+      <iface2 id="7" name="veth7.7.4"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0" buffer="0"/>
+    </link>
+    <link node1="6" node2="7">
+      <iface1 id="0" name="eth0" mac="00:00:00:aa:00:05" ip4="10.0.0.25" ip4_mask="24" ip6="2001::19" ip6_mask="64"/>
+      <iface2 id="5" name="veth7.5.4"/>
+      <options delay="0" bandwidth="0" loss="0.0" dup="0" jitter="0" unidirectional="0" buffer="0"/>
+    </link>
+  </links>
+  <configservice_configurations>
+    <service name="Distributed Consensus Algorithm" node="1"/>
+    <service name="Node Startup Script" node="1"/>
+    <service name="DefaultRoute" node="1"/>
+    <service name="Distributed Consensus Algorithm" node="2"/>
+    <service name="Node Startup Script" node="2"/>
+    <service name="DefaultRoute" node="2"/>
+    <service name="Distributed Consensus Algorithm" node="3"/>
+    <service name="Node Startup Script" node="3"/>
+    <service name="DefaultRoute" node="3"/>
+    <service name="Distributed Consensus Algorithm" node="4"/>
+    <service name="Node Startup Script" node="4"/>
+    <service name="DefaultRoute" node="4"/>
+    <service name="Distributed Consensus Algorithm" node="5"/>
+    <service name="Node Startup Script" node="5"/>
+    <service name="DefaultRoute" node="5"/>
+    <service name="Distributed Consensus Algorithm" node="6"/>
+    <service name="DefaultRoute" node="6"/>
+    <service name="Distributed Consensus Algorithm" node="8"/>
+    <service name="DefaultRoute" node="8"/>
+    <service name="Automatic SSH Setup" node="8"/>
+    <service name="Distributed Consensus Algorithm" node="9"/>
+    <service name="DefaultRoute" node="9"/>
+    <service name="Automatic SSH Setup" node="9"/>
+  </configservice_configurations>
+  <session_origin lat="47.579166412353516" lon="-122.13232421875" alt="2.0" scale="150.0"/>
+  <session_options>
+    <configuration name="controlnet" value=""/>
+    <configuration name="controlnet0" value=""/>
+    <configuration name="controlnet1" value=""/>
+    <configuration name="controlnet2" value=""/>
+    <configuration name="controlnet3" value=""/>
+    <configuration name="controlnet_updown_script" value=""/>
+    <configuration name="enablerj45" value="1"/>
+    <configuration name="preservedir" value="0"/>
+    <configuration name="enablesdt" value="0"/>
+    <configuration name="sdturl" value="tcp://127.0.0.1:50000/"/>
+    <configuration name="ovs" value="0"/>
+    <configuration name="platform_id_start" value="1"/>
+    <configuration name="nem_id_start" value="1"/>
+    <configuration name="link_enabled" value="1"/>
+    <configuration name="loss_threshold" value="30"/>
+    <configuration name="link_interval" value="1"/>
+    <configuration name="link_timeout" value="4"/>
+    <configuration name="mtu" value="0"/>
+  </session_options>
+  <session_metadata>
+    <configuration name="shapes" value="[]"/>
+    <configuration name="edges" value="[]"/>
+    <configuration name="hidden" value="[]"/>
+    <configuration name="canvas" value="{&quot;gridlines&quot;: true, &quot;canvases&quot;: [{&quot;id&quot;: 1, &quot;wallpaper&quot;: null, &quot;wallpaper_style&quot;: 1, &quot;fit_image&quot;: false, &quot;dimensions&quot;: [1000, 750]}]}"/>
+  </session_metadata>
+  <default_services>
+    <node type="mdr">
+      <service name="zebra"/>
+      <service name="OSPFv3MDR"/>
+      <service name="IPForward"/>
+    </node>
+    <node type="PC">
+      <service name="DefaultRoute"/>
+    </node>
+    <node type="prouter"/>
+    <node type="router">
+      <service name="zebra"/>
+      <service name="OSPFv2"/>
+      <service name="OSPFv3"/>
+      <service name="IPForward"/>
+    </node>
+    <node type="host">
+      <service name="DefaultRoute"/>
+      <service name="SSH"/>
+    </node>
+  </default_services>
+</scenario>
