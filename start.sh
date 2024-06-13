@@ -16,30 +16,30 @@ get_filename() {
 # Function for executing the script for Mesh Network Topology
 mesh_topology() {
     get_filename
-    pythonScriptPath="/home/$whoami/Documents/DistributedConsensusAlgorithm/Algorithms/mesh/main$node.py"
-    logPath="/home/$whoami/Documents/logs/$node/log.txt"
+    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/Algorithms/mesh/main$node.py"
+    logPath="/home/whoami/Documents/logs/$node/log.txt"
     python3 -u "$pythonScriptPath" > "$logPath" 2>&1
 }
 
 # Function for executing the script for Star Network Topology
 star_topology() {
     get_filename
-    pythonScriptPath="/home/$whoami/Documents/DistributedConsensusAlgorithm/Algorithms/star/main$node.py"
-    logPath="/home/$whoami/Documents/logs/$node/log.txt"
+    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/Algorithms/star/main$node.py"
+    logPath="/home/whoami/Documents/logs/$node/log.txt"
     python3 -u "$pythonScriptPath" > "$logPath" 2>&1
 }
 
 # Function for executing the script for Tree Network Topology
 tree_topology() {
     get_filename
-    pythonScriptPath="/home/$whoami/Documents/DistributedConsensusAlgorithm/Algorithms/tree/main$node.py"
-    logPath="/home/$whoami/Documents/logs/$node/log.txt"
+    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/Algorithms/tree/main$node.py"
+    logPath="/home/whoami/Documents/logs/$node/log.txt"
     python3 -u "$pythonScriptPath" > "$logPath" 2>&1
 }
 hlf_topology() {
     get_filename
-    pythonScriptPath="/home/$whoami/Documents/DistributedConsensusAlgorithm/Algorithms/hlf-proper/main$node.py"
-    logPath="/home/$whoami/Documents/logs/$node/log.txt"
+    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/Algorithms/hlf-proper/main$node.py"
+    logPath="/home/whoami/Documents/logs/$node/log.txt"
     python3 -u "$pythonScriptPath" | tee -a "$logPath"
 }
 
