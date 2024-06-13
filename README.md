@@ -31,11 +31,7 @@ cd core
 source ~/.bashrc
 inv install
 
-# add to ~/.bashrc
-export PATH=$PATH:/opt/core/venv/bin
-
-# add an alias to ~/.bashrc or something similar
-alias sudop='sudo env PATH=$PATH'
+echo -e "\nexport PATH=\$PATH:/opt/core/venv/bin\nalias sudop='sudo env PATH=\$PATH'" >> ~/.bashrc
 ```
 
 For good measure, make sure to restart the machine after you have completed the installation process. There appear to be some weird bugs if you don't.
