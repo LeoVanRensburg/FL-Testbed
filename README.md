@@ -79,6 +79,9 @@ chmod +x /home/$(whoami)/Documents/DistributedConsensusAlgorithm/start.sh
 Now you can proceed to [Usage](#usage).
 
 ## Usage
+
+Now that everything is successfully installed, you can run core-daemon and core-gui. To run them, use the following commands. 
+
 ```
 sudop core-daemon
 ```
@@ -87,10 +90,11 @@ and
 core-gui
 ```
 
-Run the scripts to navigate through the provided scenarios.
-Use the following python file
+After having run the following commands, go to the folder in which you cloned the git repo. In that folder, there will be a folder named Scenarios. Within this folder are XML files which you can load directly from CORE itself. Alternatively, you can run the following python files to automatically start and execute a scenario.
+
+For example, if you wanted to run Full-mesh.py, you would need to use the following command:
 ```
-/opt/core/venv/bin/python Full_mesh.py
+/opt/core/venv/bin/python Full-mesh.py
 ```
 
 ## Contact
