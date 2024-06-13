@@ -23,7 +23,7 @@ class NodeStartup(ConfigService):
     dependencies: List[str] = []
     # commands to run to start this service
     startup: List[str] = [
-        "/home/$(whoami)/Documents/DistributedConsensusAlgorithm/./start.sh",
+        "/home/whoami/Documents/DistributedConsensusAlgorithm/./start.sh",
     ]
     # commands to run to validate this service
     validate: List[str] = []
