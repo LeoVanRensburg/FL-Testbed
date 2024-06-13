@@ -73,7 +73,7 @@ mkdir -p /home/$(whoami)/Documents/logs/{1..13}
 
 We also need to give the script start.sh permissions to execute.
 ```
-chmod +x /home/leo/$(whoami)/DistributedConsensusAlgorithm/start.sh
+chmod +x /home/$(whoami)/Documents/DistributedConsensusAlgorithm/start.sh
 ```
 
 Now you can proceed to [Usage](#usage).
