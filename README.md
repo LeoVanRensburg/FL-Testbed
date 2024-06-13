@@ -63,7 +63,7 @@ git clone https://github.com/LeoVanRensburg/FL-Testbed /home/$(whoami)/Documents
 ```
 Next, we need to move the custom service into the core-daemon so it loads upon startup. This is typically found in /home/$(whoami)/core/daemon/core/configservices/utilservices.
 ```
-cp -r FL-Testbed/core-services /home/$(whoami)/core/daemon/core/configservices/utilservices
+cp -r /home/$(whoami)/Documents/DistributedConsensusAlgorithm/core-services /home/$(whoami)/core/daemon/core/configservices/utilservices
 ```
 
 Next, we need to make a directory in which the logs can be made.
