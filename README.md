@@ -40,37 +40,36 @@ alias sudop='sudo env PATH=$PATH'
 
 For good measure, make sure to restart the machine after you have completed the installation process. There appear to be some weird bugs if you don't.
 
+You can now proceed to the Post-install set of instructions.
+
+### Alternative
+
+Before proceeding with the rest of this installation guide, please follow the instructions on [this website](https://coreemu.github.io/core/install.html) to install CORE.
+
+Once you have installed CORE following any of the methods on the website, please proceed to the Post-install set of instructions.
+
+### Post-install
+
 Now you should be able to run core-daemon by running the command:
 ```
 sudop core-daemon
 ```
 
+If you can successfully run this command, you can proceed below. If not, it is recommended that you follow the install instructions again, and if that fails, consult the CORE documentation. 
+
 Now, go to your Documents folder, or your preferred place and clone this git repo. 
 ```
-git clone LeoVanRensburg/FL-Testbed
+git clone https://github.com/LeoVanRensburg/FL-Testbed
 ```
 Next, we need to move the custom service into the core-daemon so it loads upon startup. This is typically found in /home/$(whoami)/core/daemon/core/configservices/utilservices.
 ```
 cp -r FL-Testbed/core-services /home/$(whoami)/core/daemon/core/configservices/utilservices
 ```
 
-Next, navigate to your install location, typically found in /home/$(whoami)/core/daemon/core/configservices/utilservices
-While in this folder, make copy the files found in this github repo (insert link here) to this folder.
-
 Now you can proceed to [Usage](#usage).
-
-### Alternative
-Before proceeding with the rest of this installation guide, please follow the instructions on [this website](https://coreemu.github.io/core/install.html) to install CORE.
-
-### Post-install
-
-Once you have completed the installation and verified CORE is working, you can continue with the following steps:
-1. Clone the github repo
-2. Move the files to X
 
 ## Usage
 ```
-# now you can run commands like so
 sudop core-daemon
 ```
 and
