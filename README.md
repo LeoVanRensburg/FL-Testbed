@@ -66,6 +66,11 @@ Next, we need to move the custom service into the core-daemon so it loads upon s
 cp -r FL-Testbed/core-services /home/$(whoami)/core/daemon/core/configservices/utilservices
 ```
 
+Next, we need to make a directory in which the logs can be made.
+```
+mkdir -p /home/$(whoami)/Documents/logs/{1..13}
+```
+
 Now you can proceed to [Usage](#usage).
 
 ## Usage
