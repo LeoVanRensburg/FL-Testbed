@@ -108,7 +108,7 @@ sudop core-cleanup
 
 ## Youtube Tutorial
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TH2wfQ_YbjA/0.jpg)](https://www.youtube.com/watch?v=TH2wfQ_YbjA)
+[![Youtube Video Tutorial](https://images2.imgbox.com/06/69/mwddjcGF_o.png)](https://www.youtube.com/watch?v=TH2wfQ_YbjA)
 
 ## Contact
 Email: research@leeu.me
