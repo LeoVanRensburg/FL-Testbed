@@ -111,5 +111,7 @@ sudop core-cleanup
 Click on the image below to access the video.
 [![Youtube Video Tutorial](https://images2.imgbox.com/06/69/mwddjcGF_o.png)](https://www.youtube.com/watch?v=TH2wfQ_YbjA)
 
-## Contact
+## Contact Info
+Feel free to send me a email if you have any questions about this project.
+
 Email: research@leeu.me
