@@ -106,5 +106,9 @@ The below command allows you to cleanup any remnants of CORE in case of a crash 
 sudop core-cleanup
 ```
 
+## Youtube Tutorial
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/TH2wfQ_YbjA/0.jpg)](https://www.youtube.com/watch?v=TH2wfQ_YbjA)
+
 ## Contact
 Email: research@leeu.me
