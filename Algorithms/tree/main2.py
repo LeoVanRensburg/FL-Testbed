@@ -44,7 +44,7 @@ def main():
     nodeIPs = ["10.0.0.20", "0.0.0.0", "10.0.1.21", "10.0.6.21", "10.0.5.21", "10.0.0.25", "10.0.0.26", "10.0.0.27"]
     algorithm = 1
     topology = 6
-    nrOfIterations = 100
+    nrOfIterations = 10
     
     if(topology == 6):
         # FCG
