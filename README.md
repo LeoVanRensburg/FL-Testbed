@@ -119,6 +119,10 @@ The below command allows you to cleanup any remnants of CORE in case of a crash 
 ```
 sudop core-cleanup
 ```
+You also have access to the core-cli command. This command can load and modify .xml files. However, it does not appear that you can actually start a session using this command. 
+```
+sudop core-cli
+```
 
 ## Youtube Tutorial
 
