@@ -91,12 +91,20 @@ and
 core-gui
 ```
 
-After having run the following commands, go to the folder in which you cloned the git repo. In that folder, there will be a folder named Scenarios. Within this folder are XML files which you can load directly from CORE itself. Alternatively, you can run the following python files to automatically start and execute a scenario.
-
+After having run the following commands, go to the folder in which you cloned the git repo. In that folder, there will be a folder named Scenarios. You can run the python files found within this folder to automatically start and execute a scenario. Alternatively, you can load the XML files within this folder directly through CORE itself. One advantage of using the python files is that you don't need the gui open at all. You can just view the logs. 
 For example, if you wanted to run Full-mesh.py, you would need to use the following command:
 ```
 /opt/core/venv/bin/python Full-Mesh.py
 ```
+
+Alternatively, if you want to open any of the .xml files, you should open the core-gui and go to File -> Open -> the folder where you stored the Scenarios -> Click on the Scenario you want to open -> Open. Then you have to press the start button to start running the scenario. 
+
+Then, you can view the logs at:
+```
+/home/$(whoami)/Documents/logs/
+```
+Once you get to this folder, you should see more folders labelled 1 through 13. Each of these folders correspond to a node in CORE. Within these folders, you will find a file called log.txt. This folder will contain the full output of each of the nodes. If you run into any errors or want to analyze the results, you will see it in here.
+
 ## Useful Commands
 
 Some other useful commands are present which can be used to improve the user experience.
