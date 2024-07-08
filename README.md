@@ -105,6 +105,12 @@ Then, you can view the logs at:
 ```
 Once you get to this folder, you should see more folders labelled 1 through 13. Each of these folders correspond to a node in CORE. Within these folders, you will find a file called log.txt. This folder will contain the full output of each of the nodes. If you run into any errors or want to analyze the results, you will see it in here.
 
+You can also use the log aggregator script to view all the important results. You should launch this script before you start running the scenarios in CORE. It will automatically track the final results and execution times across multiple trials of a given scenario. To use this script you simply have to launch it using python.
+```
+python3 log-aggregator.py
+```
+To view the results, you have to press the character q, and then enter. This will stop the script from running and display all the results in the terminal. It's recommended that you stop the script after you change the scenario to something different or change something in the scenario, like the number of transmissions.
+
 ## Useful Commands
 
 Some other useful commands are present which can be used to improve the user experience.
