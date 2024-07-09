@@ -81,6 +81,8 @@ Now you can proceed to [Usage](#usage).
 
 ## Usage
 
+### Basic Usage
+
 Now that everything is successfully installed, you can run core-daemon and core-gui. To run them, use the following commands. 
 
 ```
@@ -99,6 +101,8 @@ For example, if you wanted to run Full-mesh.py, you would need to use the follow
 
 Alternatively, if you want to open any of the .xml files, you should open the core-gui and go to File -> Open -> the folder where you stored the Scenarios -> Click on the Scenario you want to open -> Open. Then you have to press the start button to start running the scenario. 
 
+### Logging
+
 Then, you can view the logs at:
 ```
 /home/$(whoami)/Documents/logs/
@@ -110,6 +114,18 @@ You can also use the log aggregator script to view all the important results. Yo
 python3 log-aggregator.py
 ```
 To view the results, you have to press the character q, and then enter. This will stop the script from running and display all the results in the terminal. It's recommended that you stop the script after you change the scenario to something different or change something in the scenario, like the number of transmissions.
+
+### Attacks
+
+To simulate an attack between nodes, you have multiple options. You could simply adjust network links on a certain node to simulate a basic attack such as a DDoS attack. On the other hand, you could also change some of the numbers in the distributed consensus algorithm to simulate a malware attack, where an attacker has taken control of one of your federated learning nodes, and changed the model that is getting sent to mess with your results.
+
+To accomplish the first attack, you need to open up the core-gui. After you have a scenario loaded, you can then simply right click on the red line between 2 nodes. This should pop up a menu where it gives you the option to adjust the bandwidth, latency, jitter, and percent of packets lost. If you give a really low bandwidth limit, and very high latency and packet loss, you would be simulating a basic DDoS attack.
+
+To simulate a malware attack, through a compromised node, you can modify the values that a node sends to other nodes. You can find the files of the distributed consensus algorithm in:
+```
+/home/$(whoami)/Documents/DistributedConsensusAlgorithm/Algorithm/yourScenariosName/
+```
+You then have to choose which node is compromised and change the corresponding value in main(nodeName).py. Then you should find the variable titled "nodeValues". After you have found the location of nodeValues, you should change the corresponding value in the array with a different number. This in effect will make this value appear as if a node is compromised and is sending false data to the other nodes. It's also worth noting that you should take note of the original value to see the percentage change. 
 
 ## Useful Commands
 
