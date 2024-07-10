@@ -143,7 +143,7 @@ sudop core-cli
 ## Youtube Tutorial
 
 Click on the image below to access the video.
-[![Video Gif](https://images2.imgbox.com/06/69/mwddjcGF_o.png)](https://www.youtube.com/watch?v=TH2wfQ_YbjA)
+[![Video Gif](https://images2.imgbox.com/06/69/mwddjcGF_o.png)](https://youtu.be/TH2wfQ_YbjA)
 
 ## Contact Info
 Feel free to send me a email if you have any questions about this project.
