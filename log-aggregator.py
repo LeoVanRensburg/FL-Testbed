@@ -1,6 +1,7 @@
 import os
 import re
 import time
+import numpy as np
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
@@ -15,12 +16,12 @@ class LogHandler(FileSystemEventHandler):
             self.callback(event.src_path)
 
 def extract_info(log_content):
-    result_match = re.search(r"Node: ([\d.]+) has final result: ([-\d.]+)", log_content)
+    result_match = re.search(r"Node: ([\d.]+) has final result: \[([\d.\s-]+)\]", log_content)
     time_match = re.search(r"Node: [\d.]+ took ([\d.]+) seconds", log_content)
     transmissions_match = re.search(r"Node: [\d.]+ needed (\d+) transmissions", log_content)
     
     node_ip = result_match.group(1) if result_match else None
-    result = float(result_match.group(2)) if result_match else None
+    result = np.array([float(x) for x in result_match.group(2).split()]) if result_match else None
     execution_time = float(time_match.group(1)) if time_match else None
     transmissions = int(transmissions_match.group(1)) if transmissions_match else None
     
