@@ -119,7 +119,15 @@ To view the results, you have to press the character q, and then enter. This wil
 
 To simulate an attack between nodes, you have multiple options. You could simply adjust network links on a certain node to simulate a basic attack such as a DDoS attack. On the other hand, you could also change some of the numbers in the distributed consensus algorithm to simulate a malware attack, where an attacker has taken control of one of your federated learning nodes, and changed the model that is getting sent to mess with your results.
 
-To accomplish the first attack, you need to open up the core-gui. After you have a scenario loaded, you can then simply right click on the red line between 2 nodes. This should pop up a menu where it gives you the option to adjust the bandwidth, latency, jitter, and percent of packets lost. If you give a really low bandwidth limit, and very high latency and packet loss, you would be simulating a basic DDoS attack.
+To accomplish the first attack, you can run the loss.py script. To effectively use this script, you need to use it in the following format:
+```
+python3 loss.py [Session Number] [Scenario Name] [Nodes Affected] [Packet Loss (%)]
+```
+So, an example where Node 1 and 4 are affected in the Mesh topology with 20% packet loss would look like as follows:
+```
+python3 loss.py 1 mesh 1,4 20
+```
+The following topologies are currently supported: 'mesh', 'hlf', 'star', and 'tree'. One important thing to note is that the simulation must be running before you can run this script. You can also change the values while CORE is running. To simulate a DDoS attack occuring halfway through the algorithm. 
 
 To simulate a malware attack, through a compromised node, you can modify the values that a node sends to other nodes. You can find the files of the distributed consensus algorithm in:
 ```
