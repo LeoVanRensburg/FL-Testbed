@@ -135,6 +135,14 @@ To simulate a malware attack, through a compromised node, you can modify the val
 ```
 You then have to choose which node is compromised and change the corresponding value in main(nodeName).py. Then you should find the variable titled "nodeValues". After you have found the location of nodeValues, you should change the corresponding value in the array with a different number. This in effect will make this value appear as if a node is compromised and is sending false data to the other nodes. It's also worth noting that you should take note of the original value to see the percentage change. 
 
+### Status
+
+The status.py script can be run as follows:
+```
+/opt/core/venv/bin/python3 status.py
+```
+This script can be used to see the conditions found in the core-gui without necessarily having the core-gui open. You could also modify this script to display the information to a website instead of printing it out on a console.  
+
 ## Useful Commands
 
 Some other useful commands are present which can be used to improve the user experience.
