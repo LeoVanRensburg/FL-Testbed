@@ -186,6 +186,10 @@ Now you can finally run the API by running
 ```
 Now you are successfully running the API.
 
+Now, you need to run a Grafana instance. Located in api/grafana/ there is a docker-compose file to set up a Grafana instance quickly. You will need to have docker installed for this. If you do not, then you can manually set up a Grafana instance. You can also use a existing Grafana instance if you already have one.
+
+Once you have Grafana up and running, you need to create a Grafana dashboard. Navigate to the Dashboards tab on Grafana and press New -> New Dashboard -> Import dashboard. Then copy the github file in api/grafana/panels.json and paste it in the bos saying, "Import via dashboard JSON model". This will then allow you to add the "CORE Dashboard" panel. 
+
 ## Youtube Tutorial
 
 Click on the image below to access the video.
