@@ -72,9 +72,10 @@ Next, we need to make a directory in which the logs can be made.
 mkdir -p /home/$(whoami)/Documents/logs/{1..13}
 ```
 
-We also need to give the script start.sh permissions to execute.
+We also need to give the script all the necessary scripts permission to execute.
 ```
 chmod +x /home/$(whoami)/Documents/DistributedConsensusAlgorithm/start.sh
+chmod +x /home/$(whoami)/Documents/DistributedConsensusAlgorithm/api/grafana.sh
 ```
 
 Now you can proceed to [Usage](#usage).
@@ -155,6 +156,35 @@ You also have access to the core-cli command. This command can load and modify .
 ```
 sudop core-cli
 ```
+
+## Grafana
+
+To run Grafana you first need to run the API and Promtail. 
+
+To install promtail, you need to to download the promtail binary from the Grafana Loki releases page. https://github.com/grafana/loki/releases/ Then unzip the promtail binary you just downloaded.
+```
+unzip promtail-linux-amd64.zip
+```
+Next make the file executable using
+```
+chmod +x promtail-linux-amd64
+```
+Then move it to
+```
+sudo mv promtail-linux-amd64 /usr/local/bin/promtail
+```
+
+After successfully installing promtail, you need to point promtail to the url of your grafana instance
+```
+cd /home/$(whoami)/Documents/DistributedConsensusAlgorithm/api
+```
+From here, open config-promtail.yml if your favorite text editor. You will need to replace grafana_sever_ip with that of your loki instance in Grafana.
+
+Now you can finally run the API by running
+``
+./grafana.sh
+```
+Now you are successfully running the API.
 
 ## Youtube Tutorial
 
