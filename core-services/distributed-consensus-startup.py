@@ -1,21 +1,23 @@
 from core.services.base import CoreService
+from core.services.base import ServiceMode
 
-class DistributedConsensusAlgorithmService(CoreService):
+class NodeStartupScriptService(CoreService):
     # Unique name for your service within CORE
-    name: str = "Distributed Consensus Algorithm"
+    name: str = "Node Startup Script"
     # The group your service is associated with, used for display in the GUI
     group: str = "Custom Services"
-    # List of files associated with the service (could be scripts or configuration files)
+    # List of files associated with the service (none in this case)
     files: list[str] = []
-    # Commands to be executed at startup
-    startup: list[str] = [
-        "pip3 install phe --no-index --find-links /home/whoami/Documents/DistributedConsensusAlgorithm/setup/phe-1.5.0-py2.py3-none-any.whl"
-    ]
+    # Command to be executed at startup
+    startup: list[str] = ["/home/leo/Documents/DistributedConsensusAlgorithm/./start.sh"]
+    # Set the validation mode to NON_BLOCKING
+    validation_mode: ServiceMode = ServiceMode.NON_BLOCKING
 
     def get_text_template(self, name: str) -> str:
         """
-        Returns a script to log the node name or any additional task.
+        This method could be used to create a log file or additional configuration if needed.
+        For now, it logs the node startup.
         """
         return f"""
-        echo '${{node.name}}' > {name}_log.txt
+        echo '${{node.name}} has started.' > {name}_startup.log
         """
