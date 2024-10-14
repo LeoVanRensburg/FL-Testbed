@@ -78,6 +78,11 @@ chmod +x /home/$(whoami)/Documents/DistributedConsensusAlgorithm/start.sh
 chmod +x /home/$(whoami)/Documents/DistributedConsensusAlgorithm/api/grafana.sh
 ```
 
+Next we need to add our custom services directory to the CORE daemon. We can do so by running the below command,
+```
+sudo sed -i "s|#custom_services_dir = /home/<user>/.coregui/custom_services|custom_services_dir = /home/$(whoami)/Documents/DistributedConsensusAlgorithm/core-services|" /opt/core/etc/core.conf
+```
+
 Now you can proceed to [Usage](#usage).
 
 ## Usage
