@@ -18,7 +18,7 @@ get_filename() {
 # Function for executing the script for Mesh Network Topology
 mesh_topology() {
     get_filename
-    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/mesh/main$node.py"
+    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/Algorithms/mesh/main$node.py"
     logPath="/home/whoami/Documents/logs/$node/log.txt"
     python3 -u "$pythonScriptPath" 2>&1 | while IFS= read -r line; do echo "$(date +"[%Y-%m-%d %H:%M:%S.%3N]") $line"; done > "$logPath"
 }
@@ -33,7 +33,7 @@ mesh_vector_topology() {
 # Function for executing the script for Star Network Topology
 star_topology() {
     get_filename
-    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/star/main$node.py"
+    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/Algorithms/star/main$node.py"
     logPath="/home/whoami/Documents/logs/$node/log.txt"
     python3 -u "$pythonScriptPath" 2>&1 | while IFS= read -r line; do echo "$(date +"[%Y-%m-%d %H:%M:%S.%3N]") $line"; done > "$logPath"
 }
@@ -55,7 +55,7 @@ tree_topology() {
 
 hlf_distributed() {
     get_filename
-    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/hlf-distributed/main$node.py"
+    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/Algorithms/hlf-distributed/main$node.py"
     logPath="/home/whoami/Documents/logs/$node/log.txt"
     python3 -u "$pythonScriptPath" 2>&1 | while IFS= read -r line; do echo "$(date +"[%Y-%m-%d %H:%M:%S.%3N]") $line"; done > "$logPath"
 }
