@@ -1,53 +1,23 @@
-from typing import Dict, List
+from core.services.base import CoreService
+from core.services.base import ServiceMode
 
-from core.config import ConfigString, ConfigBool, Configuration
-from core.configservice.base import ConfigService, ConfigServiceMode, ShadowDir
-
-
-# class that subclasses ConfigService
-class NodeStartup(ConfigService):
-    # unique name for your service within CORE
+class NodeStartupScriptService(CoreService):
+    # Unique name for your service within CORE
     name: str = "Node Startup Script"
-    # the group your service is associated with, used for display in GUI
+    # The group your service is associated with, used for display in the GUI
     group: str = "Custom Services"
-    # directories that the service should shadow mount, hiding the system directory
-    directories: List[str] = [
-    ]
-    # files that this service should generate, defaults to nodes home directory
-    # or can provide an absolute path to a mounted directory
-    files: List[str] = [
-    ]
-    # executables that should exist on path, that this service depends on
-    executables: List[str] = []
-    # other services that this service depends on, can be used to define service start order
-    dependencies: List[str] = []
-    # commands to run to start this service
-    startup: List[str] = [
-        "/home/whoami/Documents/DistributedConsensusAlgorithm/./start.sh",
-    ]
-    # commands to run to validate this service
-    validate: List[str] = []
-    # commands to run to stop this service
-    shutdown: List[str] = []
-    # validation mode, blocking, non-blocking, and timer
-    validation_mode: ConfigServiceMode = ConfigServiceMode.NON_BLOCKING
-    # configurable values that this service can use, for file generation
-    default_configs: List[Configuration] = [
-    ]
-    # sets of values to set for the configuration defined above, can be used to
-    # provide convenient sets of values to typically use
-    modes: Dict[str, Dict[str, str]] = {
-    }
-    # defines directories that this service can help shadow within a node
-    shadow_directories: List[ShadowDir] = [
-    ]
+    # List of files associated with the service (none in this case)
+    files: list[str] = []
+    # Command to be executed at startup
+    startup: list[str] = ["/home/whoami/Documents/DistributedConsensusAlgorithm/./start.sh"]
+    # Set the validation mode to NON_BLOCKING
+    validation_mode: ServiceMode = ServiceMode.NON_BLOCKING
 
     def get_text_template(self, name: str) -> str:
-        return """
-        # sample script 1
-        # node id(${node.id}) name(${node.name})
-        # config: ${config}
-        echo hello
-	    iperf3 -s -p7575 &
         """
-
+        This method could be used to create a log file or additional configuration if needed.
+        For now, it logs the node startup.
+        """
+        return f"""
+        echo '${{node.name}} has started.' > {name}_startup.log
+        """
