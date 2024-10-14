@@ -186,7 +186,7 @@ cd /home/$(whoami)/Documents/DistributedConsensusAlgorithm/api
 From here, open config-promtail.yml if your favorite text editor. You will need to replace grafana_sever_ip with that of your loki instance in Grafana.
 
 Now you can finally run the API by running
-``
+```
 ./grafana.sh
 ```
 Now you are successfully running the API.
