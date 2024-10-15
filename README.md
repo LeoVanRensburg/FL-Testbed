@@ -193,7 +193,11 @@ Now you are successfully running the API.
 
 Now, you need to run a Grafana instance. Located in api/grafana/ there is a docker-compose file to set up a Grafana instance quickly. You will need to have docker installed for this. If you do not, then you can manually set up a Grafana instance. You can also use a existing Grafana instance if you already have one.
 
+After you setup Grafana, you need to add the 'Infinity' plug-in. To do so, you need to navigate to Administration -> Plugins and data -> Plugins. Then search for the Infinity plugin and install it. After you install it make sure to add it as a data source. 
+
 Once you have Grafana up and running, you need to create a Grafana dashboard. Navigate to the Dashboards tab on Grafana and press New -> New Dashboard -> Import dashboard. Then copy the github file in api/grafana/panels.json and paste it in the bos saying, "Import via dashboard JSON model". This will then allow you to add the "CORE Dashboard" panel. 
+
+Next, you need to navigate the the CORE Dashboard. After you navigate here, you need to change the IP address found in each panel. You need to change this to your computer's ip address, which can be found by using the 'ip a' command. You cannot point it to the local ip as Grafana is running in docker, which means it's pointing to the local ip in the docker container. 
 
 ## Youtube Tutorial
 
