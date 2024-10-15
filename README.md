@@ -185,6 +185,13 @@ cd /home/$(whoami)/Documents/DistributedConsensusAlgorithm/api
 ```
 From here, open config-promtail.yml if your favorite text editor. You will need to replace grafana_sever_ip with that of your loki instance in Grafana.
 
+You also need to install 2 python packages for creating the API, which can be done with the commands below.
+
+```
+pip3 install flask
+pip3 install flask_cors
+```
+
 Now you can finally run the API by running
 ```
 ./grafana.sh
