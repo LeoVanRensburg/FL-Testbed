@@ -205,7 +205,7 @@ After you setup Grafana, you need to add the 'Infinity' plugin. To do so, you ne
 
 Once you have Grafana up and running, you need to create a Grafana dashboard. Navigate to the Dashboards tab on Grafana and press New -> New Dashboard -> Import dashboard. Then copy the github file in api/grafana/panels.json and paste it in the bos saying, "Import via dashboard JSON model". This will then allow you to add the "CORE Dashboard" panel. 
 
-Next, you need to navigate the the CORE Dashboard. Here you should be able to see all the panels. 
+Next, you need to navigate the the CORE Dashboard. Here you should be able to see all the panels. It's important to note that there must be an active session in CORE to for the "Core Links" panels to display something. The other panels will display after a full session of the Distributed Consensus algorithm has been run. 
 
 ## Youtube Tutorial
 
