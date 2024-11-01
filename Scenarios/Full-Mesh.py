@@ -1,7 +1,7 @@
 import re
 
 def modify_start_sh():
-    file_path = '/home/leo/Documents/DistributedConsensusAlgorithm/start.sh'
+    file_path = '/home/whoami/Documents/DistributedConsensusAlgorithm/start.sh'
     variable_name = 'TOPOLOGY_CHOICE'
     new_value = '1'
 
