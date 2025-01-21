@@ -5,7 +5,7 @@
 # 2 - Star Network Topology
 # 3 - Tree Network Topology
 # 4 - HLF Distributed Topology
-TOPOLOGY_CHOICE=4
+TOPOLOGY_CHOICE=1
 
 # Function to get the current filename
 get_filename() {
