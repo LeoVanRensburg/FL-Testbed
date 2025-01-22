@@ -9,7 +9,7 @@ class NodeStartupScriptService(CoreService):
     # List of files associated with the service (none in this case)
     files: list[str] = []
     # Command to be executed at startup
-    startup: list[str] = ["/home/whoami/Documents/DistributedConsensusAlgorithm/./start.sh"]
+    startup: list[str] = ["bash /home/whoami/Documents/DistributedConsensusAlgorithm/start.sh"]
     # Set the validation mode to NON_BLOCKING
     validation_mode: ServiceMode = ServiceMode.NON_BLOCKING
 
