@@ -48,7 +48,7 @@ Once you have installed CORE following any of the methods on the website, please
 
 Now you should be able to run core-daemon by running the command:
 ```
-sudop core-daemon
+sudo core-daemon
 ```
 
 If you can successfully run this command, you can proceed below. If not, it is recommended that you follow the install instructions again, and if that fails, consult the CORE documentation. 
