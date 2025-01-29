@@ -9,7 +9,6 @@
     <device id="1" name="1" icon="" canvas="1" type="PC" class="" image="">
       <position x="405.56219482421875" y="167.58493041992188" lat="47.577643100212825" lon="-122.1268593779759" alt="2.0"/>
       <configservices>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="Node Startup Script"/>
         <service name="DefaultRoute"/>
       </configservices>
@@ -17,7 +16,6 @@
     <device id="2" name="2" icon="" canvas="1" type="PC" class="" image="">
       <position x="490.94384765625" y="209.94740295410156" lat="47.57725802713613" lon="-122.12570888332007" alt="2.0"/>
       <configservices>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="Node Startup Script"/>
         <service name="DefaultRoute"/>
       </configservices>
@@ -25,7 +23,6 @@
     <device id="3" name="3" icon="" canvas="1" type="PC" class="" image="">
       <position x="533.992919921875" y="298.0191955566406" lat="47.576457449216626" lon="-122.12512880872632" alt="2.0"/>
       <configservices>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="Node Startup Script"/>
         <service name="DefaultRoute"/>
       </configservices>
@@ -33,7 +30,6 @@
     <device id="4" name="4" icon="" canvas="1" type="PC" class="" image="">
       <position x="490.94384765625" y="383.4833068847656" lat="47.57568056357525" lon="-122.12570888332007" alt="2.0"/>
       <configservices>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="Node Startup Script"/>
         <service name="DefaultRoute"/>
       </configservices>
@@ -41,7 +37,6 @@
     <device id="5" name="5" icon="" canvas="1" type="PC" class="" image="">
       <position x="405.4868469238281" y="424.8914794921875" lat="47.5753041509676" lon="-122.12686039326847" alt="2.0"/>
       <configservices>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="Node Startup Script"/>
         <service name="DefaultRoute"/>
       </configservices>
@@ -75,19 +70,14 @@
     </link>
   </links>
   <configservice_configurations>
-    <service name="Distributed Consensus Algorithm" node="1"/>
     <service name="Node Startup Script" node="1"/>
     <service name="DefaultRoute" node="1"/>
-    <service name="Distributed Consensus Algorithm" node="2"/>
     <service name="Node Startup Script" node="2"/>
     <service name="DefaultRoute" node="2"/>
-    <service name="Distributed Consensus Algorithm" node="3"/>
     <service name="Node Startup Script" node="3"/>
     <service name="DefaultRoute" node="3"/>
-    <service name="Distributed Consensus Algorithm" node="4"/>
     <service name="Node Startup Script" node="4"/>
     <service name="DefaultRoute" node="4"/>
-    <service name="Distributed Consensus Algorithm" node="5"/>
     <service name="Node Startup Script" node="5"/>
     <service name="DefaultRoute" node="5"/>
   </configservice_configurations>
