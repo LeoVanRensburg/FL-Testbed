@@ -6,7 +6,6 @@
       <position x="71.0" y="65.0" lat="47.578575581142246" lon="-122.1313675129724" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -14,7 +13,6 @@
       <position x="245.93736267089844" y="64.39278411865234" lat="47.578581100589936" lon="-122.12901027937264" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -22,7 +20,6 @@
       <position x="73.0" y="201.0" lat="47.577339358885006" lon="-122.13134056351387" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -30,7 +27,6 @@
       <position x="242.0" y="210.0" lat="47.57725754902946" lon="-122.12906333426864" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -38,7 +34,6 @@
       <position x="646.0" y="46.0" lat="47.57874828633976" lon="-122.12361954364687" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -46,7 +41,6 @@
       <position x="812.0" y="52.0" lat="47.57869374791789" lon="-122.1213827385894" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -54,7 +48,6 @@
       <position x="647.0" y="183.0" lat="47.57750297821261" lon="-122.12360606891761" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -62,7 +55,6 @@
       <position x="806.0" y="182.0" lat="47.57751206816026" lon="-122.12146358696498" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -70,7 +62,6 @@
       <position x="465.3655090332031" y="475.342529296875" lat="47.57484553225928" lon="-122.12605354450798" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -78,7 +69,6 @@
       <position x="305.8851318359375" y="578.1519775390625" lat="47.573910943905254" lon="-122.12820249941329" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -86,7 +76,6 @@
       <position x="625.707275390625" y="578.216552734375" lat="47.57391035687979" lon="-122.12389298261695" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -94,7 +83,6 @@
       <position x="463.30426025390625" y="680.4339599609375" lat="47.57298113392253" lon="-122.12608131927722" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -102,7 +90,6 @@
       <position x="459.18182373046875" y="321.7816162109375" lat="47.57624144527939" lon="-122.12613686799327" alt="2.0"/>
       <configservices>
         <service name="Node Startup Script"/>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="DefaultRoute"/>
       </configservices>
     </device>
@@ -216,43 +203,30 @@
   </links>
   <configservice_configurations>
     <service name="Node Startup Script" node="1"/>
-    <service name="Distributed Consensus Algorithm" node="1"/>
     <service name="DefaultRoute" node="1"/>
     <service name="Node Startup Script" node="2"/>
-    <service name="Distributed Consensus Algorithm" node="2"/>
     <service name="DefaultRoute" node="2"/>
     <service name="Node Startup Script" node="3"/>
-    <service name="Distributed Consensus Algorithm" node="3"/>
     <service name="DefaultRoute" node="3"/>
     <service name="Node Startup Script" node="4"/>
-    <service name="Distributed Consensus Algorithm" node="4"/>
     <service name="DefaultRoute" node="4"/>
     <service name="Node Startup Script" node="5"/>
-    <service name="Distributed Consensus Algorithm" node="5"/>
     <service name="DefaultRoute" node="5"/>
     <service name="Node Startup Script" node="6"/>
-    <service name="Distributed Consensus Algorithm" node="6"/>
     <service name="DefaultRoute" node="6"/>
     <service name="Node Startup Script" node="7"/>
-    <service name="Distributed Consensus Algorithm" node="7"/>
     <service name="DefaultRoute" node="7"/>
     <service name="Node Startup Script" node="8"/>
-    <service name="Distributed Consensus Algorithm" node="8"/>
     <service name="DefaultRoute" node="8"/>
     <service name="Node Startup Script" node="9"/>
-    <service name="Distributed Consensus Algorithm" node="9"/>
     <service name="DefaultRoute" node="9"/>
     <service name="Node Startup Script" node="10"/>
-    <service name="Distributed Consensus Algorithm" node="10"/>
     <service name="DefaultRoute" node="10"/>
     <service name="Node Startup Script" node="11"/>
-    <service name="Distributed Consensus Algorithm" node="11"/>
     <service name="DefaultRoute" node="11"/>
     <service name="Node Startup Script" node="12"/>
-    <service name="Distributed Consensus Algorithm" node="12"/>
     <service name="DefaultRoute" node="12"/>
     <service name="Node Startup Script" node="13"/>
-    <service name="Distributed Consensus Algorithm" node="13"/>
     <service name="DefaultRoute" node="13"/>
   </configservice_configurations>
   <session_origin lat="47.579166412353516" lon="-122.13232421875" alt="2.0" scale="150.0"/>
