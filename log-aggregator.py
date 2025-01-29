@@ -57,7 +57,7 @@ class ResultAggregator:
         return json.dumps(self.results)
 
 def main():
-    base_path = "/home/leo/Documents/logs"
+    base_path = "/home/whoami/Documents/logs"
     aggregator = ResultAggregator(base_path)
     
     # Process existing files
