@@ -16,31 +16,31 @@ get_filename() {
 # Function for executing the script for Mesh Network Topology
 mesh_topology() {
     get_filename
-    pythonScriptPath="/home/leo/Documents/DistributedConsensusAlgorithm/Algorithms/consensus_node.py"
-    logPath="/home/leo/Documents/logs/$node/log.txt"
+    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/Algorithms/consensus_node.py"
+    logPath="/home/whoami/Documents/logs/$node/log.txt"
     python3 -u "$pythonScriptPath" mesh $node 2>&1 | while IFS= read -r line; do echo "$(date +"[%Y-%m-%d %H:%M:%S.%3N]") $line"; done > "$logPath"
 }
 	
 # Function for executing the script for Star Network Topology
 star_topology() {
     get_filename
-    pythonScriptPath="/home/leo/Documents/DistributedConsensusAlgorithm/Algorithms/consensus_node.py"
-    logPath="/home/leo/Documents/logs/$node/log.txt"
+    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/Algorithms/consensus_node.py"
+    logPath="/home/whoami/Documents/logs/$node/log.txt"
     python3 -u "$pythonScriptPath" star $node 2>&1 | while IFS= read -r line; do echo "$(date +"[%Y-%m-%d %H:%M:%S.%3N]") $line"; done > "$logPath"
 }
 
 # Function for executing the script for Tree Network Topology
 tree_topology() {
     get_filename
-    pythonScriptPath="/home/leo/Documents/DistributedConsensusAlgorithm/Algorithms/consensus_node.py"
-    logPath="/home/leo/Documents/logs/$node/log.txt"
+    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/Algorithms/consensus_node.py"
+    logPath="/home/whoami/Documents/logs/$node/log.txt"
     python3 -u "$pythonScriptPath" tree $node 2>&1 | while IFS= read -r line; do echo "$(date +"[%Y-%m-%d %H:%M:%S.%3N]") $line"; done > "$logPath"
 }
 
 hlf_distributed() {
     get_filename
-    pythonScriptPath="/home/leo/Documents/DistributedConsensusAlgorithm/Algorithms/consensus_node.py"
-    logPath="/home/leo/Documents/logs/$node/log.txt"
+    pythonScriptPath="/home/whoami/Documents/DistributedConsensusAlgorithm/Algorithms/consensus_node.py"
+    logPath="/home/whoami/Documents/logs/$node/log.txt"
     python3 -u "$pythonScriptPath" hlf $node 2>&1 | while IFS= read -r line; do echo "$(date +"[%Y-%m-%d %H:%M:%S.%3N]") $line"; done > "$logPath"
 }
 
