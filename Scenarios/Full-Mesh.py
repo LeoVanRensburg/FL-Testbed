@@ -48,7 +48,6 @@ def main():
     nodes = []
     for node_id, position in enumerate(node_positions, start=1):
         node = session.add_node(_id=node_id, name=str(node_id), position=position)
-        node.services.add("Distributed Consensus Algorithm")
         node.services.add("Node Startup Script")
         node.services.add("DefaultRoute")
         nodes.append(node)
