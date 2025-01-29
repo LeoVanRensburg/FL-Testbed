@@ -5,7 +5,6 @@
     <device id="1" name="1" icon="" canvas="1" type="PC" class="" image="">
       <position x="334.0" y="90.0" lat="47.57834833659335" lon="-122.12782365917656" alt="2.0"/>
       <configservices>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="Node Startup Script"/>
         <service name="DefaultRoute"/>
       </configservices>
@@ -13,7 +12,6 @@
     <device id="2" name="2" icon="" canvas="1" type="PC" class="" image="">
       <position x="210.0" y="209.0" lat="47.577266639019726" lon="-122.129494525605" alt="2.0"/>
       <configservices>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="Node Startup Script"/>
         <service name="DefaultRoute"/>
       </configservices>
@@ -21,7 +19,6 @@
     <device id="3" name="3" icon="" canvas="1" type="PC" class="" image="">
       <position x="443.0" y="213.0" lat="47.5772302790492" lon="-122.126354913687" alt="2.0"/>
       <configservices>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="Node Startup Script"/>
         <service name="DefaultRoute"/>
       </configservices>
@@ -29,7 +26,6 @@
     <device id="4" name="4" icon="" canvas="1" type="PC" class="" image="">
       <position x="361.0" y="376.0" lat="47.57574858877238" lon="-122.12745984148647" alt="2.0"/>
       <configservices>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="Node Startup Script"/>
         <service name="DefaultRoute"/>
       </configservices>
@@ -37,7 +33,6 @@
     <device id="5" name="5" icon="" canvas="1" type="PC" class="" image="">
       <position x="591.0" y="374.0" lat="47.57576676927524" lon="-122.12436065375627" alt="2.0"/>
       <configservices>
-        <service name="Distributed Consensus Algorithm"/>
         <service name="Node Startup Script"/>
         <service name="DefaultRoute"/>
       </configservices>
@@ -66,19 +61,14 @@
     </link>
   </links>
   <configservice_configurations>
-    <service name="Distributed Consensus Algorithm" node="1"/>
     <service name="Node Startup Script" node="1"/>
     <service name="DefaultRoute" node="1"/>
-    <service name="Distributed Consensus Algorithm" node="2"/>
     <service name="Node Startup Script" node="2"/>
     <service name="DefaultRoute" node="2"/>
-    <service name="Distributed Consensus Algorithm" node="3"/>
     <service name="Node Startup Script" node="3"/>
     <service name="DefaultRoute" node="3"/>
-    <service name="Distributed Consensus Algorithm" node="4"/>
     <service name="Node Startup Script" node="4"/>
     <service name="DefaultRoute" node="4"/>
-    <service name="Distributed Consensus Algorithm" node="5"/>
     <service name="Node Startup Script" node="5"/>
     <service name="DefaultRoute" node="5"/>
   </configservice_configurations>
